@@ -1,12 +1,5 @@
-Create a method that takes an integer and prints it in reverse.
+Create a method that takes a String and a char and returns the occurence of that char in the String
 
-Use while loop to achieve the task.
-
-printReverse(123456) -> 654321
-printReverse(100) -> 001
-printReverse(1222222227) -> 7222222221
-
-
-printReverse(5) -> 5
-
-
+occurence("Hello World", 'a') -> 0
+occurence("Hello World", 'l') -> 3
+occurence("occurence", 'c') -> 3

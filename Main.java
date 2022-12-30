@@ -1,25 +1,22 @@
 class Main {
   public static void main(String[] args) {
 
-    System.out.println(printReverse(1234));// -> 654321
-    System.out.println(printReverse(3452));// -> 001
-    System.out.println(printReverse(1222272227));// -> 7222222221
+    System.out.println("Hello World!");
 
+   System.out.println(occurance("Hello World", 'a')); //-> 0
+   System.out.println(occurance("Hello World", 'l')); //-> 2
+   System.out.println(occurance("occurence", 'c'));//-> 3
+    
   }
 
-    public static int printReverse(int num){
-      
-      while (num > 0){
-      System.out.print(num % 10);
-      num /= 10;
-        
-        
-      }
-      return 0;
-    }
-    
-    
+   public static int occurance(String str, char ch){
+   int count = 0;
+     for (int i = 0; i < str.length(); i++) {
+       if (str.charAt(i) == ch) {
+         count++;
+       }
+     }
+     
+    return count;
+  }
 }
-
-
-
